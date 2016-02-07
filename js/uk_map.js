@@ -81,7 +81,6 @@ var Map = (function() {
 		var circle_9 = rsr.circle(350, 433, 7).attr({"fill-rule": 'evenodd',"clip-rule": 'evenodd',fill: '#8dc055',parent: 'lincs_9','stroke-width': '0','stroke-opacity': '1'}).data('id', 'info_9'); 
 		var text_9 = rsr.text(0, 0, '').attr({fill: '#FFFFFF',"font-family": 'NetworkRailSans-Bold',"font-size": '14',parent: 'lincs_9','stroke-width': '0','stroke-opacity': '1'}).transform("m1 0 0 1 403.9858 542.8765").data('id', 'info_9'); lincs_9.attr({'id': 'lincs_9','name': 'North Lincolnshire Re-signalling'}); 
 
-		//var rsrGroups = [Edinburgh,N_Hub,Doncaster,Lincs,Stafford,Cardiff,Liv_St_Shen,Paddington,Thameslink,Brighton]; 
 
 		//Push Edinburgh set
 		regions.push( circle_3, text_3 ); 
@@ -121,18 +120,15 @@ var Map = (function() {
 				this.node.style.stroke = "#8dc055";
 				var id =  this.data('id').substring(5,6);
 				$("#key_"+id).css({"color": "#ff6600"});
-//console.log("../img/"+id+"_rect_ro.png");				
 				$(".rect_"+id+" a").css({"background-image": "../img/"+id+"_rect_ro.png"});
 
 			});
 
 			regions[i].mouseout(function(e){
-				//this.node.style.fill = "#FF5A00";
 				this.node.style['stroke-width'] = "0";
 				this.node.style['stroke-opacity'] = "1.0";
 				this.node.style.stroke = "#8dc055";
 				var id =  this.data('id').substring(5,6);
-				//$("#key_"+id).css({"color": "#000"});
 			});
 
 			regions[i].mousedown(function(e){
@@ -148,9 +144,6 @@ var Map = (function() {
 					posx = parseInt(regions[i].getBBox().x, 10) - 260;
 					posy = parseInt(regions[i].getBBox().y, 10) - 57;
 				}
-
-				//console.log(posx, posy);
-				//console.log(this.data('id'));
 
 				//call Fancybox
 				var id =  $("#"+this.data('id'));
@@ -183,7 +176,6 @@ var Map = (function() {
 			//Legend key mousedown events
 			$('.prog').each(function(e) {
 				$(this).mousedown(function() {
-					//console.log($(this).attr('id').substring(4,5));
 					var id = '#info_' + $(this).attr('id').substring(4,5);
 					//call fancybox
 					doFancyBox(id);
