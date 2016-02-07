@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Interactive Map using Raphael JS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noindex,nofollow">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<!-- bxSlider CSS file -->
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/modernizr.js"></script> 
+		<script type="text/javascript">
+			if (!("ontouchstart" in document.documentElement)) {
+				document.documentElement.className += " no-touch";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="map" class="united-kingdom">
+				<!-- Raphaël JS Map Here -->
+			</div>
+
+			<div class="rectangles">
+				<div class="rect_1"><a class="prog" href="#" id="key_1"></a></div>
+				<div class="rect_2"><a class="prog" href="#" id="key_2"></a></div>
+				<div class="rect_3"><a class="prog" href="#" id="key_3"></a></div>
+				<div class="rect_4"><a class="prog" href="#" id="key_4"></a></div>
+				<div class="rect_5"><a class="prog" href="#" id="key_5"></a></div>
+				<div class="rect_6"><a class="prog" href="#" id="key_6"></a></div>
+				<div class="rect_7"><a class="prog" href="#" id="key_7"></a></div>
+				<div class="rect_8"><a class="prog" href="#" id="key_8"></a></div>
+				<div class="rect_9"><a class="prog" href="#" id="key_9"></a></div>
+			</div>
+
+			<!-- Overlay content boxes -->
+
+			<div id="info_1">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>
+
+			<div id="info_2">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+
+			</div>
+
+			<div id="info_3">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>
+
+			<div id="info_4">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>
+
+			<div id="info_5">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>
+
+			<div id="info_6">
+				<div class="box_title"><h2>Brighton Mainline modernisation<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/brighton_01.png" alt="Network Rail works" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Over Christmas and New Year, we continued modernising the railway and signalling equipment on the Brighton Mainline.</p>
+
+					<p>Together with re-building a bridge at Old Lodge Lane in Purley, this work is all part of our Railway Upgrade Plan to bring passengers more reliable, comfortable and quieter journeys.</p>
+
+				</div>
+			</div>
+
+			<div id="info_7">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>
+
+			<div id="info_8">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>		
+
+			<div id="info_9">
+				<div class="box_title"><h2>Lorem ipsum dolor sit amet<h2></div>
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="assets/test_1.jpg" alt="Test img" /></li>
+						<li><img src="assets/test_2.jpg" alt="Test img" /></li>
+					</ul>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, mea id inani iriure ancillae, pri te modus soleat. Ne unum accusata nec, cum et sumo eirmod, eu cum sumo saepe. At nam nulla utroque voluptatibus. Mel no graece pertinax percipitur, an fabulas incorrupte sit. Lorem ubique quodsi ex sit, populo ceteros adipiscing sed an, est dicat periculis repudiare eu.</p>
+
+					<p>Et ridens timeam nec, alii possim nostrum nec ad, ex ius numquam intellegebat. Commodo admodum mnesarchum has at, nam duis ferri antiopam ut. Ea affert exerci eirmod vis, te iudico intellegat disputationi mea, sententiae efficiendi quaerendum eos in. Commodo euripidis ut sea.</p>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/uk_map.js"></script> 
+		<!-- Add fancyBox -->
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<!-- bxSlider Javascript file -->
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript">$(function(){ Map.init(); });</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$('.bxslider').bxSlider({
+					infiniteLoop: true,
+					adaptiveHeight: true,
+        			controls: true,
+        			auto: false,
+					mode: 'fade',
+					pager: false,
+					//slideWidth: 480,
+					speed: 400,
+					captions: true,
+  					hideControlOnEnd: true,
+					onSliderLoad: function(){
+			            $('.bx-clone').each(function(){
+			                $(this).removeAttr('rel');
+			            })
+			        } 
+			        
+				});
+				
+			});
+		</script>
+
+	</body>
+</html>

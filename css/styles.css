@@ -1,0 +1,297 @@
+/* Interactive Map CSS *
+/* D de Alwis | Nov 2015 */
+
+/* Brand colours 
+Orange 	: #ff6600
+Green  	: #6cc04a
+Grey	: #a1a1a1
+*/
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 93.75%;
+}
+
+.container {
+	width: 100%;
+}
+
+.united-kingdom {
+	background-image: url('../img/uk_map_blue_non.png');
+	background-repeat: no-repeat;
+	margin: 0;
+	width: 600px;
+	border: 1px solid #ccc;
+}
+
+
+.infobox {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	height: 124px;
+	width: 600px;
+	background-color: #e95517;
+	
+	color: #fff;
+	text-align: center;
+	/*margin-bottom: -2px;*/
+	opacity: 0.9;
+}
+
+.infobox > h1 {
+	font-size: 18px;
+	padding-top: 22px;
+	visibility: hidden;*/
+	width: 600px;
+	height: 126px;
+	/*margin-top: 28px;
+	margin-left: 55px;*/
+	background: url('../img/header_banner_text.png') top left no-repeat;
+	opacity: 1.0;
+}
+
+/* Fancybox Info box styles */
+#info_1, #info_2, #info_3, #info_4, #info_5, #info_6, #info_7, #info_8, #info_9, #info_10 {
+	display: none;
+}
+
+.box_title {
+	height: 65px;
+	padding-top: 1px;
+	background-color: #ff6600;
+	color: #fff;
+	text-align: center;
+}
+
+.box_title > h2 {
+	font-size: 24px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.prog_title {
+	color: #a1a1a1;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px auto 20px;
+}
+
+.gallery { height: 100%; }
+
+.gallery img {
+	max-width: 480px;
+	height: auto;
+	/*border: 10px solid #fff;*/
+}
+
+.content {
+	padding: 20px;	
+	color: #111;
+	font-size: 14px;
+}
+
+.content > h3 {
+	color: #ff6600;
+	margin-bottom: 5px;
+}
+
+.content > p {
+	padding-bottom: 10px;
+}
+
+.content > p > strong {
+	font-weight: bolder;
+}
+
+.content a {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+.content a:hover {
+	text-decoration: underline;
+}
+
+/* Legend Key overlay styles */
+
+.legend {
+	position: absolute;
+	top: 100px;
+	left: 375px;
+	width: 200px;
+	height: 300px;
+	border: 0px solid #fff;
+	z-index: 100;
+	background: transparent;
+}
+
+.legend > ul {
+
+}
+
+.legend > ul > li {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+	font-size: 14px;
+	padding-bottom: 10px;
+	text-indent: -15px;
+	line-height: 1.2em;
+	
+}
+
+.legend > ul > li a { 
+	text-decoration: none; 
+	color: #000;
+}
+
+.legend > ul > li a:hover { 
+	color: #a1a1a1;
+
+}
+
+.infographic {
+	width: 600px;
+	height: 182px;
+	position: relative;
+	display: block;
+	background-image: url('../assets/stats bar_600px.png');
+	background-repeat: no-repeat;
+	margin-top: -100px
+}
+
+
+/* REACTANGLE regions */
+
+.rect_1 a {
+	position: absolute;
+	top: 580px;
+	left: 237px;
+	width: 144px;
+	height: 87px;
+	z-index: 100;
+	background: url('../img/1_rect.png') top left no-repeat;
+}
+
+.rect_1 a:hover {
+	background: url('../img/1_rect_ro.png') top left no-repeat;
+}
+
+.rect_2 a {
+	position: absolute;
+	top: 565px;
+	left: 382px;
+	width: 200px;
+	height: 61px;
+	z-index: 100;
+	background: url('../img/2_rect.png') top left no-repeat;
+}
+
+.rect_2 a:hover {
+	background: url('../img/2_rect_ro.png') top left no-repeat;
+}
+
+.rect_3 a {
+	position: absolute;
+	top: 237px;
+	left: 225px;
+	width: 271px;
+	height: 61px;
+	z-index: 100;
+	background: url('../img/3_rect.png') top left no-repeat;
+}
+
+.rect_3 a:hover {
+	background: url('../img/3_rect_ro.png') top left no-repeat;
+}
+
+.rect_4 a {
+	position: absolute;
+	top: 347px;
+	left: 20px;
+	width: 232px;
+	height: 104px;
+	z-index: 100;
+	background: url('../img/4_rect.png') top left no-repeat;
+}
+
+.rect_4 a:hover {
+	background: url('../img/4_rect_ro.png') top left no-repeat;
+}
+
+.rect_5 a {
+	position: absolute;
+	top: 565px;
+	left: 45px;
+	width: 196px;
+	height: 61px;
+	z-index: 100;
+	background: url('../img/5_rect.png') top left no-repeat;
+}
+
+.rect_5 a:hover {
+	background: url('../img/5_rect_ro.png') top left no-repeat;
+}
+
+.rect_6 a {
+	position: absolute;
+	top: 627px;
+	left: 365px;
+	width: 193px;
+	height: 80px;
+	z-index: 100;
+	background: url('../img/6_rect.png') top left no-repeat;
+}
+
+.rect_6 a:hover {
+	background: url('../img/6_rect_ro.png') top left no-repeat;
+}
+
+.rect_7 a {
+	position: absolute;
+	top: 430px;
+	left: 393px;
+	width: 179px;
+	height: 98px;
+	z-index: 100;
+	background: url('../img/7_rect.png') top left no-repeat;
+}
+
+.rect_7 a:hover {
+	background: url('../img/7_rect_ro.png') top left no-repeat;
+}
+
+.rect_8 a {
+	position: absolute;
+	top: 470px;
+	left: 45px;
+	width: 205px;
+	height: 61px;
+	z-index: 100;
+	background: url('../img/8_rect.png') top left no-repeat;
+}
+
+.rect_8 a:hover {
+	background: url('../img/8_rect_ro.png') top left no-repeat;
+}
+
+.rect_9 a {
+	position: absolute;
+	top: 352px;
+	left: 350px;
+	width: 219px;
+	height: 79px;
+	z-index: 100;
+	background: url('../img/9_rect.png') top left no-repeat;
+}
+
+.rect_9 a:hover {
+	background: url('../img/9_rect_ro.png') top left no-repeat;
+}
+
+span.orange_text { color: #ff6600; }
